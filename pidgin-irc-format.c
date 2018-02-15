@@ -233,4 +233,4 @@ static PurplePluginInfo info =
 	NULL
 };
 
-PURPLE_INIT_PLUGIN(icon_override, plugin_init, info);
+PURPLE_INIT_PLUGIN(icon_override, plugin_init, info)
