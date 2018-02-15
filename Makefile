@@ -12,16 +12,16 @@ LIBDIR := ${PREFIX}/lib64
 SOURCES := ${wildcard *.c}
 OBJECTS := ${patsubst %.c, %.o, ${SOURCES}}
 
-all:: irc-format.so
+all:: megacoder-irc-format.so
 
-irc-format.so:: ${OBJECTS}
+megacoder-irc-format.so:: ${OBJECTS}
 	${CC} -o $@ ${CFLAGS} ${LDFLAGS} ${LDLIBS} $^
 
-install:: irc-format.so
+install:: megacoder-irc-format.so
 	install -D $^ ${DESTDIR}${LIBDIR}/pidgin/$^
 
 clean::
 	${RM} *.o a.out core*
 
 clobber distclean:: clean
-	${RM} irc-format.so
+	${RM} megacoder-irc-format.so

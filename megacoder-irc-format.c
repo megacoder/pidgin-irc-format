@@ -210,13 +210,13 @@ static PurplePluginInfo info =
 	NULL,
 	PURPLE_PRIORITY_LOWEST,
 
-	"eionrobb-irc-format",
+	"megacoder-irc-format",
 	"IRC Message Format",
-	"0.1",
+	"0.0",
 	"Format outgoing IRC messages",
 	"Allows you to use the Pidgin formatting toolbar to make messages bold and stuff",
-	"Eion Robb <eionrobb@gmail.com>",
-	"http://pidgin-irc-format.googlecode.com/", //URL
+	"Tommy Reynolds <oldest.software.guy@gmail.com>",
+	"TBD", //URL
 
 	plugin_load,
 	plugin_unload,
